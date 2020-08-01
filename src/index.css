@@ -1,0 +1,6 @@
+body {
+  display: flex;
+}
+.p {
+  justify-items: center;
+}
