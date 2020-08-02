@@ -13,6 +13,13 @@ const Ul = styled.ul`
     font-size: 16px;
     padding-right: 35px;
   }
+  li:hover {
+    color: #00f3bb;
+    text-decoration-line: line-through;
+  }
+  :active {
+    text-decoration-line: line-through;
+  }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #0000ec;

@@ -2,5 +2,8 @@ body {
   display: flex;
 }
 .p {
-  justify-items: center;
+  border-color: ;
+}
+button:hover {
+  background-color: linear-gradiente(50deg, blue, pink) lin;
 }
