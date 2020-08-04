@@ -5,6 +5,8 @@ import phone from "../imagenes/phone.png";
 const StyledHistoria = styled.div`
   display: flex;
   width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #060a24;
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
