@@ -7,6 +7,7 @@ import Historia from "../src/componentes/Venimos/Historia";
 import GaleryInvitados from "../src/componentes/GaleriaInvitados/GaleryInvitados";
 import NuestrosTemas from "../src/componentes/Temas/NuestrosTemas";
 import Novedades from "../src/componentes/Novedades/Novedades";
+import Footer from "../src/componentes/Footer/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
     <GaleryInvitados />
     <NuestrosTemas />
     <Novedades />
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );

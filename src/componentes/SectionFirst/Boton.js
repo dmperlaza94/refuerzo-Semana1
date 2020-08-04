@@ -14,9 +14,8 @@ const StyledBoton = styled.button`
   }
 
   :hover {
-    background: -webkit-linear-gradient(-30deg, #00f3bb,#0000ec);
-    color:#FFFFFF
-  }
+    background: -webkit-linear-gradient(-30deg, #00f3bb, #0000ec);
+    color: #ffffff;
   }
 `;
 const Boton = () => {
