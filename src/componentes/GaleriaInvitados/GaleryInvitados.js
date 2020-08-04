@@ -21,9 +21,11 @@ const StyledGallery = styled.div`
   }
 `;
 
-const StyledTittle = styled.h2`
+const StyledTittle = styled.h3`
   font-size: 48px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #060a24;
 `;
 
 const GaleryInvitados = () => {
