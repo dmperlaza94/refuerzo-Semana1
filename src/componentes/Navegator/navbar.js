@@ -8,6 +8,7 @@ const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
+  position: relative;
   .logo {
     padding: 15px 25px;
   }
