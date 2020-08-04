@@ -1,0 +1,56 @@
+import React from "react";
+import styled from "styled-components";
+import phone from "../imagenes/phone.png";
+
+const StyledHistoria = styled.div`
+  display: flex;
+  width: 100vw;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+`;
+const StyledImagen = styled.div`
+  width: 50vw;
+
+  img {
+    width: 30vw;
+    padding-left: 150px;
+    @media (max-width: 768px) {
+      width: 100vw;
+      padding: 0px;
+    }
+  }
+`;
+const StyledParrafo = styled.div`
+  width: 23vw;
+  margin-top: 250px;
+  padding-left: 20px;
+  @media (max-width: 768px) {
+    width: 80vw;
+    margin-top: 20px;
+  }
+`;
+const Historia = () => {
+  return (
+    <StyledHistoria>
+      <StyledImagen>
+        <img src={phone} />
+      </StyledImagen>
+      <StyledParrafo>
+        <h3>De dónde venimos</h3>
+        <p>
+          Our posturings, our imagined self-importance, the delusion that we
+          have some privileged position in the Universe, are challenged by this
+          point of pale light.
+          <br />
+          <br /> Our planet is a lonely speck in the great enveloping cosmic
+          dark. In our obscurity, in all this vastness, there is no hint that
+          help will come from elsewhere to save us from ourselves.
+        </p>
+      </StyledParrafo>
+    </StyledHistoria>
+  );
+};
+
+export default Historia;

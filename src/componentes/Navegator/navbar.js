@@ -4,9 +4,8 @@ import Burger from "./Burger";
 import logo from "../imagenes/logo.svg";
 
 const Nav = styled.nav`
-  width: 100%;
+  width: 100vw;
   height: 80px;
-  padding: 0 5px;
   display: flex;
   justify-content: space-between;
   .logo {
