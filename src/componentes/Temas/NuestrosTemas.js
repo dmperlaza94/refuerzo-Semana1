@@ -10,6 +10,7 @@ const StyledTemas = styled.div`
   justify-content: space-between;
   padding: 50px 120px;
   margin-top: 50px;
+
   @media (max-width: 768px) {
     flex-wrap: wrap;
     margin-left: 100px;
@@ -25,12 +26,16 @@ const StyledTemas = styled.div`
   }
   h4 {
     font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #060a24;
   }
 `;
 
 const StyledTittle = styled.h2`
   font-size: 48px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #060a24;
 `;
 const NuestrosTemas = () => {
   return (
