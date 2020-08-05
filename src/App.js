@@ -10,6 +10,7 @@ import Footer from "../src/componentes/Footer/Footer";
 import styled from "styled-components";
 
 const StyledApp = styled.div`
+  margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
   p {
     font-family: "IBM Plex Mono", monospace;
