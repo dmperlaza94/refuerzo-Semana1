@@ -7,7 +7,8 @@ const StyledHistoria = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  div {
+  .texto {
+    padding: 20px;
     width: 35%;
     min-width: 400px;
   }
@@ -51,7 +52,7 @@ const Historia = () => {
       <div>
         <img src={phone} />
       </div>
-      <div>
+      <div className="texto">
         <h3>De dónde venimos</h3>
         <p>
           Our posturings, our imagined self-importance, the delusion that we

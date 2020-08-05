@@ -21,10 +21,7 @@ const StyledGallery = styled.div`
   }
 `;
 
-const StyledTittle = styled.h3`
-  font-size: 48px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+const StyledTittle = styled.h1`
   color: #060a24;
 `;
 

@@ -10,25 +10,27 @@ import {
 
 const StyledFooter = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 90vw;
-  align-items: center;
-  padding: 40px 25px 5px 25px;
+  padding: 25px;
+  flex-wrap: wrap;
 
   @media (min-width: 900px) {
-    flex-wrap: wrap;
+    width: 100vw;
+    padding: 50px 0px;
+    justify-content: space-evenly;
   }
 `;
 const Footer = () => {
   return (
     <StyledFooter>
       <div className="Styledcopy"> © 2019— Hello blue pale dot </div>
-      <div>
+      <div className="iconos">
         <FaSpotify />
-        <FaTwitter />
         <FaInstagram />
-        <FaTelegramPlane />
+        <FaTwitter />
         <FaFacebook />
+        <FaTelegramPlane />
       </div>
     </StyledFooter>
   );
