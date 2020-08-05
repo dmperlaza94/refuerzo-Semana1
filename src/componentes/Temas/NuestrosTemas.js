@@ -4,6 +4,7 @@ import icono1 from "../imagenes/icon1.svg";
 import icono2 from "../imagenes/icon2.svg";
 import icono3 from "../imagenes/icon3.svg";
 import icono4 from "../imagenes/icon4.svg";
+// import wave1 from "../imagenes/wave1.svg";
 
 const StyledTemas = styled.div`
   display: flex;
@@ -30,6 +31,12 @@ const StyledTemas = styled.div`
     color: #060a24;
   }
 `;
+// const StyledWave = styled.div`
+//   width: 100%;
+//   img {
+//     width: 100px;
+//   }
+// `;
 
 const StyledTittle = styled.h2`
   font-size: 48px;
@@ -59,6 +66,9 @@ const NuestrosTemas = () => {
           <h4>Seguridad informática</h4>
         </article>
       </StyledTemas>
+      {/* <StyledWave>
+        <img className="wave1" src={wave1} />
+      </StyledWave> */}
     </div>
   );
 };

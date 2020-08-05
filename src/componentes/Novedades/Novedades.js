@@ -2,21 +2,42 @@ import React from "react";
 import styled from "styled-components";
 
 const Styledcontenedor = styled.div`
-  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   width: 100vw;
   height: 250px;
-  padding-top: 200px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  ::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 110%;
+    height: 110%;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    z-index: -1;
+    transform: skewY(-5deg);
+  }
+  @media (min-width: 768px) {
+    ::after {
+      transform: skewY(-3deg);
+    }
+  }
 `;
 
 const StyledBoton = styled.button`
   background: #00f3bb;
   color: #060a24;
-  width: 30vw;
+  width: 280px;
+  padding: 20px 0px;
+  max-width: 280px;
   padding: 20px 0px;
   border: none;
-  @media (max-width: 768px) {
-    width: 90vw;
+  @media (min-width: 768px) {
+    width: 50vw;
   }
 
   :hover {
@@ -31,8 +52,10 @@ const StyledText = styled.h1`
 const Novedades = () => {
   return (
     <Styledcontenedor>
-      <StyledText>¿Querés las últimas novedades?</StyledText>
-      <StyledBoton> ESCUCHÁ LOS EPISODIOS</StyledBoton>
+      <div>
+        <StyledText>¿Querés las últimas novedades?</StyledText>
+        <StyledBoton> ESCUCHÁ LOS EPISODIOS</StyledBoton>
+      </div>
     </Styledcontenedor>
   );
 };

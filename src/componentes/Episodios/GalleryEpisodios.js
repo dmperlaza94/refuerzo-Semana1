@@ -8,12 +8,34 @@ import embed1_ from "../imagenes/embed1_.png";
 import embed2_ from "../imagenes/embed2_.png";
 import embed3_ from "../imagenes/embed3_.png";
 
+const Episodios = styled.div`
+  position: relative;
+  h1 {
+    color: #fff;
+    font-size: 40px;
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    width: 110%;
+    height: 110%;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    z-index: -1;
+    transform: skewY(-5deg);
+  }
+  @media (min-width: 768px) {
+    ::after {
+      transform: skewY(-2deg);
+    }
+  }
+`;
 const Contenedor = styled.div`
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  background-color: blue;
   height: 600px;
 
   @media (max-width: 768px) {
@@ -57,12 +79,15 @@ const StyledImagen4 = styled.div`
 
 const GalleryEpisodios = () => {
   return (
-    <Contenedor>
-      <StyledImagen1></StyledImagen1>
-      <StyledImagen2></StyledImagen2>
-      <StyledImagen3></StyledImagen3>
-      <StyledImagen4></StyledImagen4>
-    </Contenedor>
+    <Episodios>
+      <h1>Episodios</h1>
+      <Contenedor>
+        <StyledImagen1></StyledImagen1>
+        <StyledImagen2></StyledImagen2>
+        <StyledImagen3></StyledImagen3>
+        <StyledImagen4></StyledImagen4>
+      </Contenedor>
+    </Episodios>
   );
 };
 

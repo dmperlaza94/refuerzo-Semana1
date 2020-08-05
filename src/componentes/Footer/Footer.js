@@ -11,38 +11,24 @@ import {
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
-  width: 95vw;
-  padding: 30px 25px;
-  flex-wrap: wrap;
-  @media (max-width: 768px) {
-    width: 100vw;
-    /* flex-wrap: wrap; */
-  }
+  width: 90vw;
+  align-items: center;
+  padding: 40px 25px 5px 25px;
 
-  .iconos {
-    display: flex;
+  @media (min-width: 900px) {
+    flex-wrap: wrap;
   }
 `;
 const Footer = () => {
   return (
     <StyledFooter>
       <div className="Styledcopy"> © 2019— Hello blue pale dot </div>
-      <div className="iconos">
-        <div>
-          <FaSpotify />
-        </div>
-        <div>
-          <FaTwitter />
-        </div>
-        <div>
-          <FaInstagram />
-        </div>
-        <div>
-          <FaTelegramPlane />
-        </div>
-        <div>
-          <FaFacebook />
-        </div>
+      <div>
+        <FaSpotify />
+        <FaTwitter />
+        <FaInstagram />
+        <FaTelegramPlane />
+        <FaFacebook />
       </div>
     </StyledFooter>
   );
